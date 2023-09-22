@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management</title>
+    <link rel="stylesheet" href="style.css">
+ <header>
+        <h1>Aplikasi To Do List - Assignment 2 Hacktiv8</h1>
+        <h3>Muhammad Dimas Erlangga</h3>
+    </header>
+    <div class="container">
+        <div class="board">
+            <div class="card" id="backlog" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <h2>Backlog</h2>
+            </div>
+            <div class="card" id="onprogress" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <h2>On Progress</h2>
+            </div>
+            <div class="card" id="done" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <h2>Done</h2>
+            </div>
+        </div>
+        <!-- createNew section -->
+        <div class="create-new">
+            <input type="text" id="taskInput" placeholder="Masukkan Task">
+            <button id="createTaskButton">Buat</button>
+        </div>
+    </div>
+    <!-- Edit Dialog -->
+<div class="dialog">
+    <div class="dialog-content">
+        <h3>Edit Task</h3>
+        <input type="text" id="editTaskInput" placeholder="Edit your task">
+        <button id="saveEditButton">Save</button>
+        <button id="cancelEditButton">Cancel</button>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

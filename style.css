@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.board {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px;
+}
+
+.card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.task {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task span {
+    flex: 1;
+}
+
+.task button {
+    background-color: #d9534f;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.create-new {
+margin-top: 20px;
+display: flex;
+justify-content: center;
+}
+
+#taskInput {
+padding: 10px;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+width: 300px;
+}
+
+#createTaskButton {
+background-color: #d9534f;
+color: #fff;
+border: none;
+border-radius: 5px;
+padding: 10px 20px;
+font-size: 16px;
+margin-left: 10px;
+cursor: pointer;
+}
+.dialog {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+display: none;
+justify-content: center;
+align-items: center;
+z-index: 2;
+}
+
+.dialog-content {
+background-color: #fff;
+padding: 20px;
+border-radius: 5px;
+text-align: center;
+}
+
+.dialog h3 {
+margin-bottom: 10px;
+}
+
+#editTaskInput {
+padding: 10px;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+width: 300px;
+margin-bottom: 10px;
+}
+
+#saveEditButton, #cancelEditButton {
+background-color: #d9534f;
+color: #fff;
+border: none;
+border-radius: 5px;
+padding: 10px 20px;
+font-size: 16px;
+margin-right: 10px;
+cursor: pointer;
+}
+
+#cancelEditButton {
+background-color: #aaa;
+}
